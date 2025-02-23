@@ -1,2 +1,2 @@
 pandas
-google_api_client
+google-api-python-client
