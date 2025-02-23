@@ -3,7 +3,7 @@ name: Ejecutar Saldo_Inventario.py cada hora
 on:
   schedule:
     - cron: "0 * * * *"  # Se ejecuta cada hora a los 0 minutos (UTC)
-    workflow_dispatch:
+  workflow_dispatch:      # Permite ejecución manual
 
 jobs:
   run-script:
