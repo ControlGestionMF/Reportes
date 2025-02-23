@@ -123,7 +123,7 @@ def cargar_en_google_sheets(dataframe, key_path, sheet_id, sheet_name, start_row
 df_stock = leer_stock_productos()
 
 # CARGAR EN GOOGLE SHEETS
-key_path = 'C:/Users/fgodo/Downloads/key.json'
+key_path = 'key.json'
 sheet_id = '1HaFlJZOFLQHqNJMPAHitsuUBcxbOXxVsvB_yzvz08Ok'
 sheet_name = 'Inventario Actual'
 cargar_en_google_sheets(df_stock, key_path, sheet_id, sheet_name)
