@@ -1,0 +1,2 @@
+pandas
+google_api_client
