@@ -2,7 +2,7 @@ name: Ejecutar Cuentas_por_Cobrar.py cada hora a las 30
 
 on:
   schedule:
-    - cron: "30 * * * *"  # Se ejecuta cada hora a los 30 minutos (UTC)
+    - cron: "30 10-23 * * 1-5"  # Lunes a viernes, 10:00-23:00 UTC (07:00-20:00 UTC-3)
   workflow_dispatch:      # Permite ejecución manual
 
 jobs:
