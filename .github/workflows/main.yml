@@ -1,0 +1,27 @@
+name: Ejecutar Cuentas_por_Cobrar.py cada hora a las 30
+
+on:
+  schedule:
+    - cron: "30 * * * *"  # Se ejecuta cada hora a los 30 minutos (UTC)
+  workflow_dispatch:      # Permite ejecución manual
+
+jobs:
+  run-script:
+    runs-on: Ubuntu-22.04
+    steps:
+      - name: Obtener código
+        uses: actions/checkout@v3
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Crear archivo de clave de servicio
+        run: echo "$SERVICE_KEY" > key.json
+        env:
+          SERVICE_KEY: ${{ secrets.SERVICE_KEY }}
+      - name: Ejecutar script
+        run: python Cuentas_por_Cobrar.py
