@@ -243,7 +243,7 @@ vendedores_ids = obtener_ids_vendedores(nombres_vendedores)
 facturas_df = leer_facturas_no_pagadas(vendedores_ids)
 
 # CARGAR EN GOOGLE SHEETS
-key_path = 'C:/Users/fgodo/Downloads/key.json'
+key_path = 'key.json'
 sheet_id = '1o89d2Ird1ZU1XBJipj2wLkhLrLJQCOjfpJq5KhMypjI'
 sheet_name = 'Facturas No Pagadas Odoo'
 
