@@ -232,9 +232,9 @@ def cargar_en_google_sheets(dataframe, key_path, sheet_id, sheet_name, start_row
         print(f"Error al cargar datos en Google Sheets: {e}")
 
 # NOMBRES DE VENDEDORES
-nombres_vendedores = ['IVO CANALE','HENRY MENDOZA','MIGUEL ANGEL JIMENEZ','EDUARD LAREZ','LUIS DIAZ','ANDERSON MEJIAS',
-                     'JORGE KEWAYFATI','EDGAR RAZZAK','LENNYS OJEDA','MAITE DE SANTIAGO','NEEDMI CASANOVA',
-                     'OLGA LINARES','SANDRA SEGNINI','ANTONIO ANDRES TERAN','FREDDY PALMA','PEDRO SOTO','GABRIELA CRESCINI']
+nombres_vendedores = ['LENNYS OJEDA','HENRY MENDOZA','MIGUEL ANGEL JIMENEZ','EDUARD LAREZ','LUIS DIAZ','ANDERSON MEJIAS',
+                     'JORGE KEWAYFATI','EDGAR RAZZAK','JOSE LEONET','MAITE DE SANTIAGO','NEEDMI CASANOVA',
+                     'OLGA LINARES','JUAN MORA','SANDRA SEGNINI','ANTONIO ANDRES TERAN','FREDDY PALMA','PEDRO SOTO','GABRIELA CRESCINI']
 
 # OBTENER IDs DE VENDEDORES
 vendedores_ids = obtener_ids_vendedores(nombres_vendedores)
