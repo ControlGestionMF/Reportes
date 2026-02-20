@@ -72,7 +72,9 @@ def leer_facturas_no_pagadas(vendedores):
         ('move_type', 'in', ['out_invoice', 'out_receipt']),  # Solo Facturas de Venta y Boletas
         ('payment_state', 'in', ['not_paid', 'partial']),  # Estado de pago no pagado o parcialmente pagado
         ('state', '=', 'posted'),  # Solo documentos publicados
-        ('invoice_user_id', 'in', vendedores)  # Filtrar por vendedores específicos
+        ('invoice_user_id', 'in', vendedores),  # Filtrar por vendedores específicos
+
+        ('l10n_latam_document_type_id', '!=', False) # Eliminar TipoDocumento vacios, para no incluir facturas del 2021.
     ]
 
     try:
