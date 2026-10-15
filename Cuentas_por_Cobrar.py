@@ -234,7 +234,7 @@ def cargar_en_google_sheets(dataframe, key_path, sheet_id, sheet_name, start_row
         print(f"Error al cargar datos en Google Sheets: {e}")
 
 # NOMBRES DE VENDEDORES
-nombres_vendedores = ['DANIEL CHACON','HENRY MENDOZA','JESUS PEÑARANDA','LENNYS OJEDA','LUIS DIAZ','FELIX AVILAN',
+nombres_vendedores = ['JESUS PEÑARANDA','DANIEL CHACON','HENRY MENDOZA','LENNYS OJEDA','LUIS DIAZ','FELIX AVILAN',
                      'SUSAN CUSTODIO','ELVER ROMERO','NEEDMI CASANOVA','MAITE DE SANTIAGO','ORLANDO LUGO',
                      'AURA DUEZ','OLGA LINARES','JOEL MARIN','SANDRA SEGNINI','ANTONIO ANDRES TERAN','ROBERTO SEPULVEDA','VICTOR BENAVIDES','PEDRO SOTO','CAMILA FARFAN','MARIA EUGENIA LANDAETA']
 
@@ -250,6 +250,18 @@ sheet_id = '1o89d2Ird1ZU1XBJipj2wLkhLrLJQCOjfpJq5KhMypjI'
 sheet_name = 'Facturas No Pagadas Odoo'
 
 cargar_en_google_sheets(facturas_df, key_path, sheet_id, sheet_name)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # In[ ]:
