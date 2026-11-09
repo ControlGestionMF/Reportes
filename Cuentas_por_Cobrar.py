@@ -234,7 +234,7 @@ def cargar_en_google_sheets(dataframe, key_path, sheet_id, sheet_name, start_row
         print(f"Error al cargar datos en Google Sheets: {e}")
 
 # NOMBRES DE VENDEDORES
-nombres_vendedores = ['JESUS PEÑARANDA','DANIEL CHACON','HENRY MENDOZA','LENNYS OJEDA','LUIS DIAZ','FELIX AVILAN',
+nombres_vendedores = ['EVA LOBO','DANIEL CHACON','HENRY MENDOZA','LENNYS OJEDA','LUIS DIAZ','FELIX AVILAN',
                      'SUSAN CUSTODIO','ELVER ROMERO','NEEDMI CASANOVA','MAITE DE SANTIAGO','ORLANDO LUGO',
                      'AURA DUEZ','OLGA LINARES','JOEL MARIN','SANDRA SEGNINI','ANTONIO ANDRES TERAN','ROBERTO SEPULVEDA','VICTOR BENAVIDES','PEDRO SOTO','CAMILA FARFAN','MARIA EUGENIA LANDAETA']
 
